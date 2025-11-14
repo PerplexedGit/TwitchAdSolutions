@@ -849,6 +849,7 @@ twitch-videoad.js text/javascript
             onContentLoaded();
         });
     }
+    window.sessionStorage.setItem('directoryGameChannelPageSort', '"VIEWER_COUNT"'); 
     window.simulateAds = (depth) => {
         if (depth === undefined || depth < 0) {
             console.log('Ad depth paramter required (0 = no simulated ad, 1+ = use backup player for given depth)');
